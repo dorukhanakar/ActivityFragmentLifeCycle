@@ -55,3 +55,18 @@ silerek README.md içerisine bu bilgileri yazınız.
 16. Yazdığınzı kodları Push'layınız. Ve bu adres üzerindeki ana projeye Pull Request (PR) atınız.
 
 # En başarılı PR proje'ye "orjinal cevap" olarak kabul edilecektir.
+
+12 - Bu uygulamadaki logları yorumladığımızda Xml e eklenen fragmentlar OnInflate metoduyla geldiğini görmekteyiz fakat activity e eklediğimiz
+fragmentımız activity oncreate den sonra çalışan onattach fragment metoduyla birlikte gelmektedir ve bu metodla çalışmaya başlamaktadır.
+
+
+13 - Bir pencereyi, sayfayı, ekranı birden fazla kez benzerini yada kendisi kullanacak isek fragment kullanılması tercih edilir, Örneğin
+bir sohbet uygulamasında sohbet ekranlarını kullanırken fragmentlar kullanılır eğer activity kullanılırsak çizdiğimiz tüm ekran baştan çizdirilir
+fragmentta sadece fragmenttaki değiştirdiklerimizi değiştirir arkada activiy değişmedinden çizilmiş öğeler bi daha baştan çizdirilmez.Eğer
+uygulamamızda hiç önceden kullanmadığımız bir sayfa açacak isek ve o sayfanın benzerleride olmayacak ise tek biyerde kullanılacaksa
+activity kullanamız gerekir. Örneğin bir sohbet uygulamasında ayarlar menüsü gibi.
+
+14 - Bir Fragment'ı Activity layout'una XML dosyası üzerinden eklediğinizde bu Fragment'ı çalışma zamanında kaldıramazsınız. Eğer Fragment'ları
+kullanıcı etkileşimi sırasında çıkarıp eklemeyi planlıyorsanız, Activity içinde ve Activity başladığında eklemelisiniz.
+
+15- Performans farkları yoktur.
